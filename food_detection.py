@@ -9,7 +9,7 @@ import io
 # Replace with your actual API key or set it as an environment variable
 
 def analyze_food_image(image):
-    client = genai.Client(api_key=API_KEY)
+    client = genai.Client(api_key=os.getenv("API_KEY"))
 
     # 1. Load the image
     # try:
